@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | LHS Machine Learning Club</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #020617;
+            background-image: 
+                radial-gradient(circle at 0% 0%, rgba(147, 51, 234, 0.25) 0%, transparent 40%),
+                radial-gradient(circle at 100% 100%, rgba(59, 130, 246, 0.2) 0%, transparent 40%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: #e2e8f0;
+        }
+        
+        .glass-card {
+            background: rgba(15, 23, 42, 0.3);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(59, 130, 246, 0.5);
+            transform: translateY(-10px);
+            background: rgba(15, 23, 42, 0.5);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+
+        .aura-blue {
+            position: absolute;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(59, 130, 246, 0.15) 0%, transparent 60%);
+            filter: blur(80px);
+            z-index: -1;
+            bottom: -100px;
+            left: -100px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="border-b border-slate-800/50 p-4 sticky top-0 bg-slate-950/60 backdrop-blur-xl z-50">
+        <div class="max-w-5xl mx-auto flex justify-between items-center">
+            
+            <div class="flex items-center gap-3">
+                <svg width="42" height="42" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-[0_0_15px_rgba(147,51,234,0.6)]">
+                    <rect x="15" y="25" width="70" height="60" rx="20" fill="#0f172a" stroke="#3b82f6" stroke-width="4"/>
+                    <circle cx="35" cy="55" r="6" fill="#60a5fa">
+                        <animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite" />
+                    </circle>
+                    <circle cx="65" cy="55" r="6" fill="#60a5fa">
+                        <animate attributeName="opacity" values="1;0.2;1" dur="4s" repeatCount="indefinite" />
+                    </circle>
+                    <line x1="50" y1="25" x2="50" y2="10" stroke="#a855f7" stroke-width="4" />
+                    <circle cx="50" cy="10" r="9" fill="#a855f7">
+                        <animate attributeName="r" values="8;11;8" dur="2s" repeatCount="indefinite" />
+                        <animate attributeName="fill" values="#a855f7;#d8b4fe;#a855f7" dur="2s" repeatCount="indefinite" />
+                    </circle>
+                </svg>
+                <h1 class="text-xl font-extrabold text-white tracking-tighter uppercase">
+                    LHS <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 underline decoration-purple-500/50">ML CLUB</span>
+                </h1>
+            </div>
+
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="text-slate-400 hover:text-white transition">Home</a>
+                <a href="about.html" class="text-slate-400 hover:text-white transition">About Us</a>
+                <a href="events.html" class="text-slate-400 hover:text-white transition">Events</a>
+                <a href="slides.html" class="text-slate-400 hover:text-white transition">Slides</a>
+                <a href="contact.html" class="text-white border-b-2 border-blue-500 pb-1">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="aura-blue"></div>
+
+    <main class="max-w-5xl mx-auto py-24 px-4 text-center">
+        <header class="mb-20">
+            <h2 class="text-6xl font-extrabold text-white tracking-tight mb-4">Get In Touch</h2>
+            <p class="text-2xl text-blue-400 font-bold tracking-widest uppercase">Connect With Us</p>
+        </header>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <div class="glass-card p-10 rounded-[3rem] flex flex-col items-center">
+
+                <div class="text-5xl mb-6">💬</div>
+
+                <h3 class="text-2xl font-bold text-white mb-2">Discord</h3>
+
+                <p class="text-slate-400 mb-8 text-sm">join our discord!</p>
+
+              <a href="https://docs.google.com/document/d/11jkoqRzvshpBMlMhnZ309GZDNrUj221LbLsaKGTxqO4/edit?usp=sharing" target="_blank" class="w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-2xl transition shadow-[0_0_20px_rgba(79,70,229,0.3)]">Join Server</a>
+
+            </div>
+
+
+
+            <div class="glass-card p-10 rounded-[3rem] flex flex-col items-center">
+
+                <div class="text-5xl mb-6">📸</div>
+
+                <h3 class="text-2xl font-bold text-white mb-2">Instagram</h3>
+
+                <p class="text-slate-400 mb-8 text-sm">@lhsmlclub</p>
+
+              <a href="https://docs.google.com/document/d/11jkoqRzvshpBMlMhnZ309GZDNrUj221LbLsaKGTxqO4/edit?usp=sharing" target="_blank" class="w-full py-3 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-2xl transition shadow-[0_0_20px_rgba(79,70,229,0.3)]">Join Server</a>
+
+            </div>
+
+
+
+            <div class="glass-card p-10 rounded-[3rem] flex flex-col items-center">
+
+                <div class="text-5xl mb-6">✉️</div>
+
+                <h3 class="text-2xl font-bold text-white mb-2">Email</h3>
+
+                <p class="text-slate-400 mb-8 text-sm">lhsmlclub@gmail.com</p>
+
+                <a href="mailto:lhsmlclub@gmail.com" class="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-2xl transition shadow-[0_0_20px_rgba(37,99,235,0.3)]">Send Email</a>
+
+            </div>
+
+        </div>
+        <div class="mt-20 p-12 glass-card rounded-[3rem] max-w-2xl mx-auto border-t-purple-500/30">
+            <p class="text-purple-400 font-mono text-sm mb-3 uppercase tracking-[0.3em] font-bold">Mailing List</p>
+            <p class="text-xl text-slate-300 ">Want to be on our mailing list? Contact lhsmlclub@gmal.com or ask one of us after a meeting!</p>
+        </div>
+    </main>
+
+    <footer class="py-12 text-center text-slate-500 text-sm border-t border-slate-900 bg-slate-950 mt-20">
+        &copy; 2025 Lynbrook High School Machine Learning Club
+    </footer>
+
+</body>
+</html>
